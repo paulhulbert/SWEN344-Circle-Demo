@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/.
     docker:
-      - image: circleci/node:4.8.2-jessie
+      - image: circleci/python
     steps:
       - checkout
       - run:
