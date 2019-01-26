@@ -1,13 +1,14 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/.
+    working_directory: ~/builder
     docker:
       - image: circleci/python
     steps:
+      - checkout
       - run:
           name: Test this
-          command: 'python Main.py'
+          command: 'python ~/builder/Main.py'
 
 workflows:
   version: 2
