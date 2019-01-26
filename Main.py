@@ -1,3 +1,3 @@
 print("Hello world")
 
-raise Exception("Do exceptions crash it?")
+value = 1 / 0
